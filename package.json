@@ -1,14 +1,14 @@
 {
-  "name": "node-ts-backend",
+  "name": "smec-api",
   "version": "1.0.0",
-  "description": "Node.js and typescript backend setup project for blog-tube",
+  "description": "SMEC restful api ",
   "main": "index.js",
   "repository": "https://github.com/kolynzb/SMec-API",
   "author": "Atuhaire Collins",
   "license": "MIT",
   "scripts": {
     "dev": "nodemon",
-    "start": "node -r ts-node/register/transpile-only -r tsconfig-paths/register ./dist/src/index.js",
+    "start": "node -r ts-node/register/transpile-only -r tsconfig-paths/register ./dist/src/server.js",
     "build": "tsc -p tsconfig.prod.json",
     "test": "jest",
     "test:watch": "jest --watch",
