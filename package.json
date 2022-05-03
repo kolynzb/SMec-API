@@ -8,7 +8,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "nodemon",
-    "start": "node -r ts-node/register/transpile-only -r tsconfig-paths/register ./dist/src/server.js",
+    "start": "node -r ts-node/register/transpile-only -r tsconfig-paths/register ./build/src/server.js",
     "build": "tsc -p tsconfig.prod.json",
     "test": "jest",
     "test:watch": "jest --watch",
@@ -38,7 +38,9 @@
   "dependencies": {
     "dayjs": "^1.11.1",
     "dotenv-safe": "^8.2.0",
+    "mysql2": "^2.3.3",
     "pino": "^7.11.0",
-    "pino-pretty": "^7.6.1"
+    "pino-pretty": "^7.6.1",
+    "sequelize": "^6.19.0"
   }
 }
