@@ -1,2 +1,0 @@
-# SMEC-api
-# SMec-API
