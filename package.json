@@ -2,7 +2,7 @@
   "name": "smec-api",
   "version": "1.0.0",
   "description": "SMEC restful api ",
-  "main": "index.js",
+  "main": "server.js",
   "repository": "https://github.com/kolynzb/SMec-API",
   "author": "Atuhaire Collins",
   "license": "MIT",
@@ -16,7 +16,9 @@
   },
   "devDependencies": {
     "@types/dotenv-safe": "^8.1.1",
+    "@types/express": "^4.17.13",
     "@types/jest": "^26.0.20",
+    "@types/morgan": "^1.9.3",
     "@types/node": "^14.14.33",
     "@types/pino": "^7.0.5",
     "@typescript-eslint/eslint-plugin": "^4.17.0",
@@ -30,6 +32,7 @@
     "jest": "^26.6.3",
     "nodemon": "^2.0.7",
     "prettier": "^2.2.1",
+    "sequelize-cli": "^6.4.1",
     "ts-jest": "^26.5.3",
     "ts-node": "^9.1.1",
     "tsconfig-paths": "^3.9.0",
@@ -38,7 +41,10 @@
   "dependencies": {
     "dayjs": "^1.11.1",
     "dotenv-safe": "^8.2.0",
-    "mysql2": "^2.3.3",
+    "express": "^4.18.1",
+    "morgan": "^1.10.0",
+    "pg": "^8.7.3",
+    "pg-hstore": "^2.3.4",
     "pino": "^7.11.0",
     "pino-pretty": "^7.6.1",
     "sequelize": "^6.19.0"
