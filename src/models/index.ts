@@ -19,10 +19,10 @@ if (config.use_env_variable) {
 }
 
 readdirSync(__dirname)
-  .filter(file => {
+  .filter((file: string) => {
     return file.indexOf('.') !== 0 && file !== basename && file.slice(-3) === '.ts';
   })
-  .forEach(file => {
+  .forEach((file: any) => {
     // eslint-disable-next-line @typescript-eslint/no-var-requires
     // eslint-disable-next-line global-require
     const model = require(join(__dirname, file))(sequelize, DataTypes);
