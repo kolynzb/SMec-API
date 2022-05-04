@@ -3,17 +3,17 @@
 
 import { readdirSync } from 'fs';
 import { basename as _basename, join } from 'path';
-import Sequelize, { DataTypes } from 'sequelize';
+import { Sequelize, DataTypes } from 'sequelize';
 
 const basename = _basename(__filename);
 const env = process.env.NODE_ENV || 'development';
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const config = require(`${__dirname}/../config/DBConfig.ts`)[env];
-const db = {};
+const db: any = {};
 
-let sequelize;
+let sequelize: any;
 if (config.use_env_variable) {
-  sequelize = new Sequelize(process.env[config.use_env_variable], config);
+  sequelize = new Sequelize(process.env[config.use_env_variable]!, config);
 } else {
   sequelize = new Sequelize(config.database, config.username, config.password, config);
 }

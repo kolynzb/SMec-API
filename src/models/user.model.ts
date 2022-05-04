@@ -25,9 +25,9 @@ module.exports = (sequelize: any, DataTypes: any) => {
 
     password!: string;
 
-    static associate(models: any) {
-      // define association here
-    }
+    // static associate(models: any) {
+    //   // define association here
+    // }
   }
   User.init(
     {
